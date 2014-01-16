@@ -1,0 +1,42 @@
+/*
+	Put your custom CSS here
+*/
+/* entire container, keeps perspective */
+.portfolio{
+	perspective: 1000;
+}
+
+ .primary{
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	-webkit-transform: rotateY(0deg);
+	transition: 0.8s;
+
+	
+	
+}
+.secondary{
+		-webkit-transform: rotateY(-180deg);
+		transition: 0.8s;
+	
+}
+
+
+.portfolio-item:hover .primary{
+		
+		-webkit-transform: rotateY(180deg);
+		transition: 0.8s;
+	
+
+	
+}
+
+.portfolio-item:hover .secondary{
+
+		-webkit-transform: rotateY(0deg);
+		transition: 0.8s;
+	
+}
